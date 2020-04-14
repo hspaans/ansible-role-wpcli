@@ -1,0 +1,8 @@
+---
+wpcli_url: https://github.com/wp-cli/wp-cli/releases/download/v2.4.0/wp-cli-2.4.0.phar
+wpcli_executable: /usr/bin/wp
+wpcli_checksum: sha512:4049c7e45e14276a70a41c3b0864be7a6a8cfa8ea65ebac8b184a4f503a91baa1a0d29260d03248bc74aef70729824330fb6b396336172a624332e16f64e37ef
+
+wpcli_bash_url: https://raw.githubusercontent.com/wp-cli/wp-cli/v2.4.0/utils/wp-completion.bash
+wpcli_bash_executable: /etc/bash_completion.d/wp
+wpcli_bash_checksum: sha512:3fabe39e58bd03d36960c0aeab84cb07598bce1a4576da0c99a98318eede612af7ad7b895e1e633317e09159ffb72f9ff32b3691e688cfd1870dd9a74f3797a9
