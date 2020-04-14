@@ -1,0 +1,20 @@
+---
+- name: Install WP-CLI
+  become: true
+  get_url:
+    url: "{{ wpcli_url }}"
+    dest: "{{ wpcli_executable }}"
+    mode: 0755
+    checksum: "{{ wpcli_checksum }}"
+    group: root
+    owner: root
+
+- name: Install WP-CLI Bash Completion
+  become: true
+  get_url:
+    url: "{{ wpcli_bash_url }}"
+    dest: "{{ wpcli_bash_executable }}"
+    mode: 0755
+    checksum: "{{ wpcli_bash_checksum }}"
+    group: root
+    owner: root
