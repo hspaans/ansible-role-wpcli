@@ -5,6 +5,10 @@ python: "3.7"
 # Use the new container infrastructure
 sudo: false
 
+env:
+  global:
+    - ROLE_NAME: wpcli
+
 # Install ansible
 addons:
   apt:
@@ -20,6 +24,12 @@ install:
 
   # Create ansible.cfg with correct roles_path
   - printf '[defaults]\nroles_path=../' >ansible.cfg
+
+before_script:
+  # Use actual Ansible Galaxy role name for the project directory.
+  - cd ../
+  - mv ansible-role-$ROLE_NAME hspaans.$ROLE_NAME
+  - cd hspaans.$ROLE_NAME
 
 script:
   # Basic role syntax check
