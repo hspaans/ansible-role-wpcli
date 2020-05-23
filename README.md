@@ -1,7 +1,6 @@
 Role Name
 =========
 
-
 Installs [WP-CLI](https://wp-cli.org), the command line interface for [WordPress](https://wordpress.org).
 
 Requirements
