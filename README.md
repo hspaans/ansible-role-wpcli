@@ -20,7 +20,7 @@ No dependency on other Ansible Galaxy roles.
 ---
 - hosts: servers
   roles:
-      - { role: hspaans.wpcli, become: true }
+    - { role: hspaans.wpcli, become: true }
 ```
 
 ## License

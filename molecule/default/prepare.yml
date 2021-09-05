@@ -19,6 +19,11 @@
         name: ca-certificates
         state: present
 
+    - name: Install bash-completion
+      package:
+        name: bash-completion
+        state: present
+
   tasks:
     - name: Remove files
       file:
