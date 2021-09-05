@@ -1,7 +1,6 @@
 ---
 - name: Install WP-CLI
-  become: true
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ wpcli_url }}"
     dest: "{{ wpcli_executable }}"
     mode: 0755
@@ -9,12 +8,17 @@
     group: root
     owner: root
 
+- name: Does bash-completion folder exist?
+  stat:
+    path: /etc/bash_completion.d
+  register: stat_result
+
 - name: Install WP-CLI Bash Completion
-  become: true
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ wpcli_bash_url }}"
     dest: "{{ wpcli_bash_executable }}"
-    mode: 0755
+    mode: 0644
     checksum: "{{ wpcli_bash_checksum }}"
     group: root
     owner: root
+  when: stat_result.stat.isdir|d(False)
