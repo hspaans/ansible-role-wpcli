@@ -8,10 +8,13 @@
     group: root
     owner: root
 
-- name: Does bash-completion folder exist?
-  stat:
+- name: Create bash-completion folder if it doesn't exist
+  file:
     path: /etc/bash_completion.d
-  register: stat_result
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
 
 - name: Install WP-CLI Bash Completion
   ansible.builtin.get_url:
@@ -21,4 +24,3 @@
     checksum: "{{ wpcli_bash_checksum }}"
     group: root
     owner: root
-  when: stat_result.stat.isdir|d(False)
