@@ -1,10 +1,10 @@
 # Role Name
 
-Installs [WP-CLI](https://wp-cli.org), the command line interface for [WordPress](https://wordpress.org).
+Installs [WP-CLI](https://wp-cli.org), the command-line interface for [WordPress](https://wordpress.org).
 
 ## Requirements
 
-Requires PHP to be installed for WP-CLI to function and Bash with completion for users who want command completion on the command line.
+Requires PHP to be installed for WP-CLI to function and Bash with completion for users who want command completion on the command-line.
 
 ## Role Variables
 
