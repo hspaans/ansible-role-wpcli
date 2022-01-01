@@ -26,4 +26,3 @@ jobs:
           VALIDATE_MARKDOWN: true
           VALIDATE_XML: true
           VALIDATE_YAML: true
-
