@@ -1,10 +1,10 @@
 ---
 wpcli_dep_packages: ca-certificates
 
-wpcli_url: https://github.com/wp-cli/wp-cli/releases/download/v2.5.0/wp-cli-2.5.0.phar
+wpcli_url: https://github.com/wp-cli/wp-cli/releases/download/v2.6.0/wp-cli-2.6.0.phar
 wpcli_executable: /usr/local/bin/wp
-wpcli_checksum: sha512:08dd9035fda1d529807380d5b757839e2809e289eb1a698fe33e7e21a1431d3f77c551c2b2db5adc55083d5075ea4137407994111890f765e790a97e6d9ca7af
+wpcli_checksum: sha512:d73f9161a1f03b8ecaac7b196b6051fe847b3c402b9c92b1f6f3acbe5b1cf91f7260c0e499b8947bab75920ecec918b39533ca65fa5a1fd3eb6ce7b8e2c58e7d
 
-wpcli_bash_url: https://raw.githubusercontent.com/wp-cli/wp-cli/v2.5.0/utils/wp-completion.bash
+wpcli_bash_url: https://raw.githubusercontent.com/wp-cli/wp-cli/v2.6.0/utils/wp-completion.bash
 wpcli_bash_executable: /etc/bash_completion.d/wp_local
 wpcli_bash_checksum: sha512:3fabe39e58bd03d36960c0aeab84cb07598bce1a4576da0c99a98318eede612af7ad7b895e1e633317e09159ffb72f9ff32b3691e688cfd1870dd9a74f3797a9
