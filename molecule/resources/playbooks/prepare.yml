@@ -14,16 +14,6 @@
         update_cache: true
       when: ansible_os_family == 'RedHat'
 
-    - name: Install CA-Certificates
-      package:
-        name: ca-certificates
-        state: present
-
-    - name: Install bash-completion
-      package:
-        name: bash-completion
-        state: present
-
   tasks:
     - name: Remove files
       file:

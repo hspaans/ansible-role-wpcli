@@ -1,4 +1,6 @@
 ---
+wpcli_dep_packages: ca-certificates
+
 wpcli_url: https://github.com/wp-cli/wp-cli/releases/download/v2.5.0/wp-cli-2.5.0.phar
 wpcli_executable: /usr/local/bin/wp
 wpcli_checksum: sha512:08dd9035fda1d529807380d5b757839e2809e289eb1a698fe33e7e21a1431d3f77c551c2b2db5adc55083d5075ea4137407994111890f765e790a97e6d9ca7af
