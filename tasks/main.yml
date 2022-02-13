@@ -1,4 +1,11 @@
 ---
+- name: Install packages for installation
+  package:
+    name: "{{ wpcli_dep_packages }}"
+    state: present
+  tags:
+    - packages
+
 - name: Install WP-CLI
   ansible.builtin.get_url:
     url: "{{ wpcli_url }}"
